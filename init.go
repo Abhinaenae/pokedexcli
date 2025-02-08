@@ -20,12 +20,11 @@ func init() {
 			description: "Lists some location areas",
 			callback:    commandMap,
 		},
-		/*
-			"mapb": {
-				name:        "mapb",
-				description: "Go back and lists previous areas",
-				callback:    commandMapBack,
-			},
-		*/
+
+		"mapb": {
+			name:        "mapb",
+			description: "Go back and lists previous areas",
+			callback:    commandMapb,
+		},
 	}
 }

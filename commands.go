@@ -12,5 +12,4 @@ type config struct {
 	pokeapiClient       pokeapi.Client
 	nextLocationAreaURL *string
 	prevLocationAreaURL *string
-	History             []string
 }
