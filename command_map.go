@@ -3,14 +3,13 @@ package main
 import (
 	"errors"
 	"fmt"
-	"log"
 )
 
 func commandMap(cfg *config) error {
 
 	resp, err := cfg.pokeapiClient.ListLocationAreas(cfg.nextLocationAreaURL)
 	if err != nil {
-		log.Fatal(err)
+		return err
 	}
 
 	fmt.Println("Location Areas: ")
@@ -30,7 +29,7 @@ func commandMapb(cfg *config) error {
 	}
 	resp, err := cfg.pokeapiClient.ListLocationAreas(cfg.prevLocationAreaURL)
 	if err != nil {
-		log.Fatal(err)
+		return err
 	}
 
 	fmt.Println("Location Areas: ")
