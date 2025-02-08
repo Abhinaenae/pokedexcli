@@ -8,9 +8,8 @@ import (
 	helper "github.com/abhinaenae/pokedexcli/helpers"
 )
 
-func runDex() {
+func runDex(cfg *config) {
 	scanner := bufio.NewScanner(os.Stdin)
-	cfg := &config{}
 	for {
 		fmt.Printf("Pokedex > ")
 

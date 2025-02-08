@@ -7,19 +7,20 @@ func init() {
 		"help": {
 			name:        "help",
 			description: "Provides information on commands to use",
-			callback:    func(cfg *config) error { return commandHelp() },
+			callback:    commandHelp,
 		},
 		"quit": {
 			name:        "quit",
 			description: "Ends the pokedex session",
-			callback:    func(cfg *config) error { return commandExit() },
+			callback:    commandExit,
+		},
+
+		"map": {
+			name:        "map",
+			description: "Lists some location areas",
+			callback:    commandMap,
 		},
 		/*
-			"map": {
-				name:        "map",
-				description: "Lists areas",
-				callback:    commandMap,
-			},
 			"mapb": {
 				name:        "mapb",
 				description: "Go back and lists previous areas",

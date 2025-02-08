@@ -5,7 +5,7 @@ import (
 	"os"
 )
 
-func commandExit() error {
+func commandExit(cfg *config) error {
 	fmt.Printf("Ending session...\n")
 	os.Exit(0)
 	return nil
