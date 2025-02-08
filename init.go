@@ -14,15 +14,17 @@ func init() {
 			description: "Ends the pokedex session",
 			callback:    func(cfg *config) error { return commandExit() },
 		},
-		"map": {
-			name:        "map",
-			description: "Lists areas",
-			callback:    commandMap,
-		},
-		"mapb": {
-			name:        "mapb",
-			description: "Go back and lists previous areas",
-			callback:    commandMapBack,
-		},
+		/*
+			"map": {
+				name:        "map",
+				description: "Lists areas",
+				callback:    commandMap,
+			},
+			"mapb": {
+				name:        "mapb",
+				description: "Go back and lists previous areas",
+				callback:    commandMapBack,
+			},
+		*/
 	}
 }
