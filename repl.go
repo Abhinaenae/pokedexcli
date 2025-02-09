@@ -27,8 +27,13 @@ func runDex(cfg *config) {
 
 		command := cleanedInput[0]
 
+		args := []string{}
+		if len(cleanedInput) > 1 {
+			args = cleanedInput[1:]
+		}
+
 		if cmd, exists := commands[command]; exists {
-			if err := cmd.callback(cfg); err != nil {
+			if err := cmd.callback(cfg, args...); err != nil {
 				fmt.Println("Error:", err)
 			}
 		} else {

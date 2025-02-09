@@ -26,5 +26,10 @@ func init() {
 			description: "Go back and lists previous areas",
 			callback:    commandMapb,
 		},
+		"explore": {
+			name:        "explore <location_area>",
+			description: "View encounters in a location area",
+			callback:    commandExplore,
+		},
 	}
 }
