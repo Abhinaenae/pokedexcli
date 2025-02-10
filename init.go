@@ -14,13 +14,11 @@ func init() {
 			description: "Ends the pokedex session",
 			callback:    commandExit,
 		},
-
 		"map": {
 			name:        "map",
 			description: "Lists some location areas",
 			callback:    commandMap,
 		},
-
 		"mapb": {
 			name:        "mapb",
 			description: "Go back and lists previous areas",
@@ -35,6 +33,11 @@ func init() {
 			name:        "catch <pokemon_name>",
 			description: "Attempt to catch the specified pokemon and add it to your pokedex",
 			callback:    commandCatch,
+		},
+		"inspect": {
+			name:        "inspect <pokemon_name>",
+			description: "View data about a caught pokemon.",
+			callback:    commandInspect,
 		},
 	}
 }
