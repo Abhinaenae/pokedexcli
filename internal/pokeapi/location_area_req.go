@@ -55,7 +55,6 @@ func (c *Client) ListLocationAreas(pageURL *string) (LocationAreasResponse, erro
 	c.cache.Add(fullURL, data)
 
 	return locationAreasResp, nil
-
 }
 
 func (c *Client) GetLocationArea(locationAreaName string) (LocationAreas, error) {
@@ -103,5 +102,4 @@ func (c *Client) GetLocationArea(locationAreaName string) (LocationAreas, error)
 	c.cache.Add(fullURL, data)
 
 	return locationAreas, nil
-
 }
